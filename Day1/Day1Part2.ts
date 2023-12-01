@@ -7,7 +7,7 @@ let total: number = 0;
 
 //defining a map for the value to match as keys, and its replacement value as values
 let includes = new Map<string, string>([
-    ['oneight', '18'], //accounting for stupid overlaps first
+    ['oneight', '18'], //accounting for overlaps first
     ['twone', '21'],
     ['threeight', '38'],
     ['fiveight', '58'],
