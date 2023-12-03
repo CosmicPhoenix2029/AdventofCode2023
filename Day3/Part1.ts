@@ -19,16 +19,11 @@ class LineInfo {
     endIndex: number;
 }
 
-//temp array to view the positions objects
-let posArray: Array<Positions> = [];
-
 for(let line of engineData) {
     //create an object for each line 
     const positions: Positions = new Positions();
     positions.lineNum = engineData.indexOf(line);  
     positions.numbersToCheck = getNumbersToCheck(line);
-    posArray.push(positions);
-
 
     //now for each line we have all numbers and their array positions -1 and +1 to search either side
     //now we need to search the line above, the same line and the line below to check if its a special character or not
